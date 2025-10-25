@@ -1084,8 +1084,8 @@
         } else if (currentUserType === "buyer") {
           if (screenId === "screen-buyer-feed") activeNavId = "nav-home-buyer";
           else if (screenId === "screen-product-detail")
-            activeNavId =
-              "nav-home-buyer"; // Keep home active for product detail
+            activeNavId = "nav-home-buyer";
+          // Keep home active for product detail
           // Note: Favorites screen re-uses buyer-feed, so 'nav-favorites-buyer' is handled by its click handler
           else if (screenId === "screen-buyer-profile")
             activeNavId = "nav-profile-buyer";
@@ -2537,7 +2537,7 @@
               class="btn-outline btn-ripple w-full text-lg flex items-center justify-center gap-3"
               aria-label="I'm a Delivery Person - Find delivery jobs"
             >
-              <span class="btn-text">Delivery</span>
+              <span class="btn-text">Service</span>
               <span class="text-2xl">🚚</span>
             </button>
           </div>
@@ -3654,7 +3654,7 @@
                   id="delivery-image-preview"
                   class="absolute inset-0 flex items-center justify-center"
                 >
-                  <span class="text-3xl text-charcoal/60">${icons.camera}</span>
+                  <span class="text-3xl text-charcoal/60"></span>
                 </div>
                 <label
                   for="delivery-photo-input"
@@ -3769,7 +3769,7 @@
                 class="w-12 h-12 rounded-full border-2 border-earthy-red/20"
               />
               <div>
-                <h2 class="text-xl font-bold text-charcoal">Delivery Home</h2>
+                <h2 class="text-xl font-bold text-charcoal">Delivery</h2>
                 <p class="text-sm text-charcoal/70">Welcome, Dani!</p>
                 <!-- Hardcoded name -->
               </div>
@@ -3780,7 +3780,7 @@
                 class="btn-ghost text-sm"
                 aria-label="Log out"
               >
-                <span class="w-6 h-6">${icons.logOut}</span>
+                <span class="w-6 h-6"></span>
               </button>
             </div>
           </header>
